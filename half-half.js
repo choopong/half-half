@@ -9,10 +9,10 @@ function halfHalf(price) {
     throw new Error('Minimum price must be 0.01 THB')
   }
 
-  const half = roundThaiBath(price / 2)
+  const half = roundThaiBaht(price / 2)
   console.log('half:', half)
 
-  const shares = [half, roundThaiBath(price - half)]
+  const shares = [half, roundThaiBaht(price - half)]
   console.log('shares:', shares)
 
   return shares
